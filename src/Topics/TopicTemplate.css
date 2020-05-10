@@ -1,0 +1,40 @@
+
+
+.topics-list {
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2em;
+}
+
+.left-bar {
+    margin: 0 1em;
+    /* border: 1px solid red; */
+    width: 15em;
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+    width: 15em;
+
+}
+
+.left-bar h3 {
+    margin: 0;
+    
+}
+
+.right-bar {
+    margin: 0 1em;
+    padding: 0;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+    width: 15em;
+}
+
+.right-bar p, .topic-author {
+    margin: 0;
+    font-weight: 600;
+}

@@ -3,10 +3,10 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 import './App.css';
-import Programming from './Programming';
-import Gaming from './Gaming';
-import ProgrammingTopics from './ProgrammingTopics';
-import GamingTopics from './GamingTopics';
+import ProgrammingCategory from './Categories/ProgrammingCategory';
+import GamingCategory from './Categories/GamingCategory';
+import ProgrammingTopics from './Topics/ProgrammingTopics';
+import GamingTopics from './Topics/GamingTopics';
 
 function App() {
 	return (
@@ -14,8 +14,9 @@ function App() {
 			<div className="App">
 				<Switch>
 					<Route path="/" exact component={Home} />
-					<Route path="/gaming" component={GamingTopics}/>
-					<Route path="/Programming" component={ProgrammingTopics} />
+					<Route path="/gaming"  component={GamingTopics}/>
+					<Route path="/programming" component={ProgrammingTopics} />
+					
 				</Switch>
 			</div>
 		</Router>
@@ -26,8 +27,8 @@ const Home = () => (
 	<div>
 		<h1>Home Page</h1>
 		
-		<Gaming />
-		<Programming />
+		<GamingCategory />
+		<ProgrammingCategory />
 		
 	</div>
 )

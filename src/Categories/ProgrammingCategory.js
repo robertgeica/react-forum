@@ -1,12 +1,12 @@
 import React from 'react';
-import topic from './topic2.png'
-import Category from './Category';
+import topic from '../images/topic2.png'
+import CategoryTemplate from './CategoryTemplate';
 
-const Programming = () => {
+const ProgrammingCategory = () => {
 
-    const topicImage = topic;
-    const topicTitle = "JavaScript Programming";
-    const topicDescription = "World of JavaScript Programming";
+    const categoryImage = topic;
+    const categoryTitle = "JavaScript Programming";
+    const categoryDescription = "World of JavaScript Programming";
     const totalTopics = 10;
     const activeUsers = 202;
     const lastActivityDate = 'Today, 4:20';
@@ -14,11 +14,11 @@ const Programming = () => {
 
     return (
         <div className="programming">
-            <Category
+            <CategoryTemplate
                 linkTo='/programming'
-                topicImage={topicImage}
-                topicTitle={topicTitle}
-                topicDescription={topicDescription}
+                categoryImage={categoryImage}
+                categoryTitle={categoryTitle}
+                categoryDescription={categoryDescription}
                 totalTopics={totalTopics}
                 activeUsers={activeUsers}
                 lastActivityDate={lastActivityDate}
@@ -29,4 +29,4 @@ const Programming = () => {
     );
 }
 
-export default Programming;
+export default ProgrammingCategory;

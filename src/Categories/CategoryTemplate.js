@@ -1,49 +1,50 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './CategoryTemplate.css';
 
-const Category = ({linkTo, topicImage, topicTitle, topicDescription, totalTopics, activeUsers, lastActivityDate, lastTopictitle}) => {
+const CategoryTemplate = ({linkTo, categoryImage, categoryTitle, categoryDescription, totalTopics, activeUsers, lastActivityDate, lastTopictitle}) => {
     
     return (
         <div className="categories">
             <div className="left-side">
-                <div className="topic-image">
-                    <img src={topicImage}></img>
+                <div className="category-image">
+                    <img src={categoryImage}></img>
                 </div>
 
-                <div className="topic">
+                <div className="category">
                     
-                    <Link to={linkTo}>
-                        <h1>{topicTitle}</h1>
+                    <Link className="category-title-link" to={linkTo}>
+                        <h1 className="category-title">{categoryTitle}</h1>
                     </Link>
-                    
-                    <p>{topicDescription}</p>
+
+                    <p className="category-description">{categoryDescription}</p>
                 </div>
             </div>
 
             <div className="right-side">
                 <div className="top">
 
-                    <div className="top-topic">
+                    <div className="top-category">
                         <h4>Topics</h4>
                         <span id="total-topic">{totalTopics}</span>
                     </div>
 
-                    <div className="top-topic">
+                    <div className="top-category">
                         <h4>Active Users</h4>
                         <span>{activeUsers}</span>
                     </div>
 
-                    <div className="top-topic">
+                    <div className="top-category">
                         <h4>Activity</h4>
                         <span>{lastActivityDate}</span>
                     </div>
                 </div>
 
                 <div className="bottom">
-                    <h5 class="last-topic">Last topic</h5>
+                    <h5 className="last-topic">Last topic</h5>
 
-                    <div class="last-topic-title">
-                        <i class="fab fa-xbox"></i>
+                    <div className="last-topic-title">
+                        <i className="fab fa-xbox"></i>
                         
                         <p>{lastTopictitle}</p>
                     </div>
@@ -56,5 +57,5 @@ const Category = ({linkTo, topicImage, topicTitle, topicDescription, totalTopics
     )
 }
 
-export default Category;
+export default CategoryTemplate;
 

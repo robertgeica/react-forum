@@ -1,0 +1,49 @@
+
+.TopicHeader {
+    color: grey;
+    margin: 0 2em;
+    border-bottom: 1px solid grey;
+
+
+}
+
+.topic-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 1em;
+
+}
+
+.left-header-bar {
+    margin: 0 1em;
+    /* border: 1px solid red; */
+    width: 15em;
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+    width: 15em;
+
+}
+
+.left-header-bar h4 {
+    margin: 0;
+    margin-left: -1em;
+    
+}
+
+.right-header-bar {
+    margin: 0 1em;
+    padding: 0;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: row;
+    justify-content: space-between;
+    width: 15em;
+}
+
+.right-header-bar p {
+    margin: 0 .8em;
+    font-size: .8em;
+
+}
